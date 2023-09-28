@@ -1,0 +1,251 @@
+@import url(./global.css);
+/* General Custom Style */
+.textPrimary {
+  color: var(--primaryColor);
+}
+.textPrimaryDark {
+  color: var(--primaryDark);
+}
+.textSecondary {
+  color: var(--secondaryColor);
+}
+.textDanger {
+  color: var(--redColor);
+}
+.textSuccess {
+  color: var(--greenColor);
+}
+.bgPrimary {
+  background-color: var(--primaryColor);
+}
+.bgSecondary {
+  background-color: var(--secondaryColor);
+}
+.bgLightRed {
+  background-color: var(--lightRedColor);
+}
+.bgLightSucess {
+  background-color: var(--lightGreenColor);
+}
+.borderColor {
+  border-color: var(--primaryLight);
+}
+.btnPrimary {
+  background-color: var(--primaryColor);
+  color: var(--white);
+}
+.btnPrimary:hover {
+  box-shadow: 2px 2px 4px silver;
+  color: var(--white);
+}
+.btnSecondary {
+  background-color: var(--secondaryColor);
+  color: var(--white);
+}
+.btnSecondary:hover {
+  box-shadow: 2px 2px 4px silver;
+  color: var(--white);
+}
+.btnLight {
+  background-color: var(--primaryLight);
+  color: var(--primaryColor);
+}
+.btnLight:hover {
+  background-color: var(--secondaryColor);
+  color: var(--white);
+}
+
+.btnSuccess {
+  background-color: var(--greenColor);
+  color: var(--white);
+}
+.btnSuccess:hover {
+  box-shadow: 2px 2px 4px silver;
+}
+
+/* overwrite style */
+.form-control::placeholder {
+  font-size: 0.875rem;
+}
+
+/* sidebar menu items */
+.offcanvas-start {
+  width: 270px;
+}
+.menuItems {
+  margin: 0;
+  padding: 0;
+}
+
+.menuItems li {
+  list-style-type: none;
+}
+.menuItems li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--primaryColor);
+  padding: 0.75rem 1rem;
+  justify-content: flex-start;
+  transition: all 0.2s ease-in-out;
+  font-weight: 1rem;
+  font-weight: 600;
+  border-bottom: 2px solid var(--white);
+}
+.menuItems li a span:nth-child(2) {
+  margin-left: 1rem;
+  margin-top: 4px;
+}
+
+.menuItems li:hover a {
+  background-color: var(--primaryColor);
+  color: var(--white);
+  border-bottom: 2px solid var(--secondaryColor);
+}
+.menuItems li a:active {
+  background-color: var(--primaryColor);
+  color: var(--white);
+  border-bottom: 2px solid var(--secondaryColor);
+}
+.menuItems li a.active {
+  background-color: var(--primaryColor);
+  color: var(--white);
+  border-bottom: 2px solid var(--secondaryColor);
+}
+
+/* financial analysis submenu */
+.mainContainer {
+  padding: 1.875rem;
+}
+.headerContainer {
+  box-sizing: border-box;
+  align-items: baseline;
+}
+.headerContainer h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--primaryColor);
+  margin: 8px 16px;
+}
+.headerContainer .subMenu {
+  margin: 0;
+  padding: 0;
+}
+.headerContainer .subMenu li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 8px 16px;
+}
+.headerContainer .subMenu li a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primaryColor);
+  border-bottom: 2px solid var(--white);
+}
+.headerContainer .subMenu li a::before {
+  margin-bottom: 10px;
+}
+.headerContainer .subMenu li:hover a {
+  color: var(--secondaryColor);
+  border-bottom: 2px solid var(--secondaryColor);
+}
+.headerContainer .subMenu li a.active {
+  color: var(--secondaryColor);
+  border-bottom: 2px solid var(--secondaryColor);
+}
+
+.controlsContainer {
+  border-top: 1px solid var(--primaryLight);
+}
+.controlsContainer label {
+  margin-bottom: 6px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--primaryColor);
+}
+.controlsContainer .headerContainer {
+  box-sizing: border-box;
+  align-items: baseline;
+}
+.controlsContainer .headerContainer h4 {
+  color: var(--primaryDark);
+  font-size: 0.875rem;
+  margin: 8px 16px;
+}
+.controlsContainer .headerContainer button.active {
+  background-color: var(--secondaryColor);
+  color: var(--white);
+}
+
+/* cardContainer  */
+.cardsContainer {
+}
+.cardsContainer .card .card-title {
+  font-weight: 600;
+}
+.cardsContainer .card .card-body h2 {
+  display: inline-block;
+  margin-right: 12px;
+  font-weight: 600;
+}
+.cardsContainer .card {
+  padding: 1.875rem;
+}
+.cardsContainer .card .card-body .year {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.valueContainer {
+  display: flex;
+  align-items: baseline;
+}
+.valueContainer .icon-up {
+  font-size: 1rem;
+  color: var(--greenColor);
+  margin-right: 10px;
+}
+.valueContainer .icon-down {
+  font-size: 1rem;
+  color: var(--redColor);
+  margin-right: 10px;
+}
+.valueContainer .numbers {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-right: 8px;
+}
+.valueContainer .dateValue {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.subText {
+  font-weight: 300;
+  margin-bottom: 0.875rem;
+}
+
+/* table style */
+
+.projects_attendance_table thead tr th {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--primaryColor);
+  padding-left: 2px;
+}
+.projects_attendance_table tbody tr td {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--primaryColor);
+  padding-left: 2px;
+}
+.dataTables_info {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--primaryDark);
+}
+.page-item.active .page-link {
+  background-color: var(--primaryColor);
+  border-color: var(--primaryDark);
+  color: var(--white);
+}
