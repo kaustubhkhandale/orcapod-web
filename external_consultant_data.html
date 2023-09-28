@@ -24,7 +24,7 @@
   </head>
   <body>
     <nav
-      class="navbar navbar-expand-lg sticky-top navbar-light bgPrimary shadow-sm"
+      class="navbar navbar-expand-lg sticky-top navbar-light bg-white shadow-sm"
     >
       <div class="container-fluid">
         <div class="d-flex justify-content-center align-items-center">
@@ -35,10 +35,10 @@
             role="button"
             aria-controls="offcanvasExample"
           >
-            <span class="material-symbols-outlined text-white"> apps </span>
+            <span class="material-symbols-outlined textSecondary"> menu </span>
           </a>
-          <a class="navbar-brand ms-3 text-white" href="#"
-            ><strong> Accuverse</strong></a
+          <a class="navbar-brand ms-3 textPrimaryDark" href="#"
+            ><strong> Orcapod</strong></a
           >
         </div>
 
@@ -68,7 +68,7 @@
           >
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasExampleLabel">
-                Accuverse
+                Orcapod
               </h5>
               <button
                 type="button"
@@ -88,14 +88,14 @@
                   </li>
                   <li>
                     <a href="#" class="">
-                      <span class="material-symbols-rounded"> equalizer </span>
-                      <span>Financial</span>
+                      <span class="material-symbols-rounded"> person </span>
+                      <span>Manager Level 1</span>
                     </a>
                   </li>
                   <li>
                     <a href="#" class="">
-                      <span class="material-symbols-rounded"> fact_check </span>
-                      <span>Submit Attendance</span>
+                      <span class="material-symbols-rounded"> person </span>
+                      <span>Manager Level 2</span>
                     </a>
                   </li>
                 </ul>
@@ -109,7 +109,7 @@
           >
             <div class="d-flex headerContainer justify-content-between mb-3">
               <div>
-                <h3>Add New Case</h3>
+                <h3>External Consultant Data</h3>
               </div>
               <div>
                 <button class="btn btnSuccess btn-sm mx-1">SAVE</button>
@@ -121,47 +121,42 @@
             </div>
             <div class="controlsContainer">
               <div class="row mt-3">
-                <div class="col-md-4 col-12 px-md-4">
-                  <label for="fy-reco">Case Id</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    value="Case_id-2091920"
-                    disabled
-                  />
+                <div class="col-md-12 col-12 px-md-4">
+                  <h6 class="textPrimaryDark">
+                    <strong>Candidate Personal Details</strong>
+                  </h6>
+                  <p class="textPrimaryDark font-14 mt-4">
+                    <strong>Basic Details</strong>
+                  </p>
                 </div>
                 <div class="col-md-4 col-12 px-md-4">
-                  <label for="fy-reco">Case Creation Date</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    value="10/10/2023"
-                    disabled
-                  />
+                  <div class="col mb-3">
+                    <label for="fy-reco">Candidate Name</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Enter Candidates Name"
+                    />
+                  </div>
                 </div>
-                <div class="col-md-4 col-12 px-md-4">
-                  <label for="fy-reco">Case Creation Date</label>
-
-                  <div class="input-group mb-3">
+                <div class="col-md-4">
+                  <div class="col mb-3">
+                    <label for="fy-reco">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Enter Email Id"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="col mb-3">
+                    <label for="fy-reco">Mobile Number</label>
                     <input
                       type="text"
                       class="form-control"
-                      placeholder="Clients Name"
-                      aria-label="Clients Name"
-                      aria-describedby="basic-addon2"
-                      disabled
+                      placeholder="Enter Consultant Id"
                     />
-                    <div class="input-group-append">
-                      <button
-                        class="btn btn-outline-secondary"
-                        type="button"
-                        data-toggle="tooltip"
-                        data-placement="top"
-                        title="Enable Edit"
-                      >
-                        <span class="material-symbols-rounded"> edit </span>
-                      </button>
-                    </div>
                   </div>
                 </div>
               </div>
